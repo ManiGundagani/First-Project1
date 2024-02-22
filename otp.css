@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(75deg,orange,purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#collectTheOtp,#otpLayout{
+    height: 35vh;
+    width: 20vw;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    
+}
+input{
+    width: 80%;
+    height: 3vw;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 2vw;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+#subOtp{
+    background-color: lawngreen;
+    transition: all 0.5s;
+   
+}
+#subOtp:hover{
+    transform: scale(1.1);
+    background-color: rgb(35, 58, 11);
+}
+#genOtp{
+    background-color: royalblue;
+    transition: all 0.5s;
+   
+}
+#genOtp:hover{
+    transform: scale(1.1);
+    background-color: rgb(5, 13, 55);
+}
+#enterOtp{
+    color: black;
+    text-align: center;
+    font-size: 2.2vw;
+    letter-spacing: 0.5vw;
+    cursor: text;
+    
+
+
+}
+#otpLayout{
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.581);
+    backdrop-filter: blur(10px);
+    display: none;
+    
+}
+span{
+    font-size: 34px;
+    rotate: 45deg;
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+span:hover{
+    rotate: 405deg;
+    transform: scale(1.5);
+}
+#otp{
+    cursor: none;
+    letter-spacing: 2vw;
+}
+#otp::selection{
+    display: none;
+}
